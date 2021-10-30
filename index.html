@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcudora - SOA</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="calculator__wrapper">
+        <div class="calculator__visor">
+          <div class="calculator_full__operation_wrapper">
+            <span id="calculator__first"></span>
+            <span id="calculator__operation"></span>
+            <span id="calculator__second"></span>
+          </div>
+          <input type="tel" name="visor" id="visor" readonly="readonly" value="0">
+        </div>
+        <div class="calculator__numbers">
+          <div class="calculator__line">
+            <input type="button" value="7" onclick="getNumber(this.value)">
+            <input type="button" value="8" onclick="getNumber(this.value)">
+            <input type="button" value="9" onclick="getNumber(this.value)">
+            <input type="button" value="+" name="operation" id="operation" onclick="getOperation(this)">
+          </div>
+          <div class="calculator__line">
+            <input type="button" value="4" onclick="getNumber(this.value)">
+            <input type="button" value="5" onclick="getNumber(this.value)">
+            <input type="button" value="6" onclick="getNumber(this.value)">
+            <input type="button" value="-" name="operation" id="operation" onclick="getOperation(this)">
+          </div>
+          <div class="calculator__line">
+            <input type="button" value="1" onclick="getNumber(this.value)">
+            <input type="button" value="2" onclick="getNumber(this.value)">
+            <input type="button" value="3" onclick="getNumber(this.value)">
+            <input type="button" value="x" name="operation" id="operation" onclick="getOperation(this)">
+          </div>
+          <div class="calculator__line">
+            <input type="button" value="AC" name="clear" id="clear" onclick="clearInputs()">
+            <input type="button" value="0" onclick="getNumber(this.value)">
+            <input type="button" value="=" name="equal" id="equal" onclick="calculate()">
+            <input type="button" value="/" name="operation" id="operation" onclick="getOperation(this)">
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="scripts/script.js"></script>
+</body>
+
+</html>
