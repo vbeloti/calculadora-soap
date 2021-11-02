@@ -10,7 +10,7 @@ let result = '';
 
 function getOperation(operationElement) {
   if (!firstNumbers) return;
-  if (operation) return;
+  if (secondNumbers) return;
 
   operation = operationElement.value;
 
